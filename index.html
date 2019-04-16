@@ -4,15 +4,18 @@
         <meta charset="utf-8">
         <title>nekooo</title>
         <link rel="stylesheet" href="stylesheet.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
         <script>
+            setInterval(cat_cry,30000)
             var a=new Audio("cat-cry1.mp3");
             function cat_cry(){
                 a.play();
             }
         </script>
     </head>
-    <body onload="setInterval(cat_cry,30000)">
+    <body>
         <h1>30秒ごとに猫が鳴くよ！止まらないよ！</h1>
+        <button onclick="cat_cry()">Start!</button>
     </body>
 </html>
